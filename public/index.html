@@ -425,6 +425,9 @@ dialog.lb::backdrop{background:rgba(25,24,23,.94)}
 .contact{margin-top:8px;padding:20px;border:1px solid var(--line);display:grid;gap:4px;font-size:15px}
 .contact b{font-family:var(--display);font-weight:400;font-size:22px}
 .contact .addr{font-variant-numeric:tabular-nums;user-select:all}
+.contact .person{display:flex;align-items:center;gap:18px;margin:4px 0}
+.contact .person img{width:88px;height:110px;object-fit:cover;flex:none;filter:saturate(.9)}
+.contact .person>div{display:grid;gap:4px;min-width:0}
 .agenda-h{font-size:13px;font-family:var(--body);font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--oak);margin-bottom:6px}
 .agenda{list-style:none;margin:0;padding:0;counter-reset:a;border-top:1px solid var(--graphite)}
 .agenda li{counter-increment:a;display:grid;grid-template-columns:44px 1fr;padding:20px 0;border-bottom:1px solid var(--line);font-family:var(--display);font-size:clamp(20px,2vw,24px);line-height:1.3}
@@ -953,9 +956,14 @@ footer b{color:var(--graphite);letter-spacing:.14em;font-weight:600}
         <p class="lede" data-i="l10">Dieses Konzept ist ein Vorschlag, kein fertiger Plan. Wir möchten es gerne persönlich mit Ihnen besprechen, Ihre Sicht hören und gemeinsam den nächsten Schritt festlegen.</p>
         <div class="contact">
           <svg class="logo" viewBox="0 0 257.5 118" role="img" aria-label="IMPAC Project Marketing"><use href="#impac-logo"/></svg>
-          <span class="eyebrow" data-i="ct-e">Ihr Ansprechpartner</span>
-          <b>Jacob Elshout</b>
-          <span class="addr">info@impac.at</span>
+          <div class="person">
+            <img src="img/jacob-elshout.jpg" alt="Jacob Elshout" width="320" height="400" loading="lazy" decoding="async">
+            <div>
+              <span class="eyebrow" data-i="ct-e">Ihr Ansprechpartner</span>
+              <b>Jacob Elshout</b>
+              <span class="addr">info@impac.at</span>
+            </div>
+          </div>
           <div class="actions" style="margin-top:14px"><a class="btn" id="meetbtn" href="mailto:info@impac.at?subject=AUREN%20%C2%B7%20Gespr%C3%A4chstermin" data-i="meet">Gesprächstermin anfragen</a></div>
           <p class="note" style="margin-top:8px" data-i="meet-n">Schreiben Sie uns einfach eine kurze Nachricht. Wir melden uns, um einen Termin zu vereinbaren.</p>
         </div>
