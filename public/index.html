@@ -1162,7 +1162,9 @@ footer b{color:var(--graphite);letter-spacing:.14em;font-weight:600}
       var st=pr*4;
       lys.forEach(function(im,i){
         var o=i===0?1:cl((st-(i-0.18))/0.32);
-        var k=1.1-0.1*cl((st-(i-0.2))/1.25);
+        var p=cl((st-(i-0.2))/1.25);
+        /* approach (forest, facade, interior) pushes in; the final valley view opens up */
+        var k=i<lys.length-1?1+0.1*p:1.1-0.1*p;
         im.style.opacity=o;im.style.transform='scale('+k.toFixed(4)+')';
       });
       lns.forEach(function(el,i){
