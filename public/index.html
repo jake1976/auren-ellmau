@@ -422,7 +422,10 @@ dialog.lb::backdrop{background:rgba(25,24,23,.94)}
 .btn.ghost{background:transparent;color:var(--graphite)}
 .btn:hover{background:var(--copper);border-color:var(--copper);color:var(--linen)}
 .status{font-size:13px;color:var(--copper);min-height:1.3em}
-.contact{margin-top:8px;padding:20px;border:1px solid var(--line);display:grid;gap:4px;font-size:15px}
+.contact{margin-top:8px;padding:20px;border:1px solid var(--line);display:grid;gap:20px;font-size:15px;align-items:start}
+@media (min-width:560px){.contact{grid-template-columns:168px 1fr}}
+.portrait{width:100%;max-width:240px;aspect-ratio:4/5;object-fit:cover;border-radius:2px}
+.cdet{display:grid;gap:4px}
 .contact b{font-family:var(--display);font-weight:400;font-size:22px}
 .contact .addr{font-variant-numeric:tabular-nums;user-select:all}
 .agenda-h{font-size:13px;font-family:var(--body);font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--oak);margin-bottom:6px}
@@ -952,12 +955,15 @@ footer b{color:var(--graphite);letter-spacing:.14em;font-weight:600}
         <h2 id="h-decide" data-i="h10">Lassen Sie uns darüber sprechen.</h2>
         <p class="lede" data-i="l10">Dieses Konzept ist ein Vorschlag, kein fertiger Plan. Wir möchten es gerne persönlich mit Ihnen besprechen, Ihre Sicht hören und gemeinsam den nächsten Schritt festlegen.</p>
         <div class="contact">
+          <img class="portrait" src="img/jacob.jpg" alt="Jacob Elshout, IMPAC Project Marketing" loading="lazy">
+          <div class="cdet">
           <svg class="logo" viewBox="0 0 257.5 118" role="img" aria-label="IMPAC Project Marketing"><use href="#impac-logo"/></svg>
           <span class="eyebrow" data-i="ct-e">Ihr Ansprechpartner</span>
           <b>Jacob Elshout</b>
           <span class="addr">info@impac.at</span>
           <div class="actions" style="margin-top:14px"><a class="btn" id="meetbtn" href="mailto:info@impac.at?subject=AUREN%20%C2%B7%20Gespr%C3%A4chstermin" data-i="meet">Gesprächstermin anfragen</a></div>
           <p class="note" style="margin-top:8px" data-i="meet-n">Schreiben Sie uns einfach eine kurze Nachricht. Wir melden uns, um einen Termin zu vereinbaren.</p>
+          </div>
         </div>
       </div>
       <div class="rv">
